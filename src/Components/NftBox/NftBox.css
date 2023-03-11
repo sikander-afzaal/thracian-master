@@ -1,0 +1,13 @@
+.wrapper-character {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  position: relative;
+  max-width: 500px;
+}
+
+.wrapper-character video {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}

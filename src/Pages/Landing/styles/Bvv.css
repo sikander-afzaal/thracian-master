@@ -1,0 +1,39 @@
+.bvv-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--max-width);
+  gap: 0px;
+  margin-top: 40px;
+  padding-inline: 20px;
+}
+.bvv-logo {
+  width: 100%;
+  max-width: 400px;
+}
+.bvv-div p {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  max-width: 800px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.bvv-div a {
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+.bvv-cover {
+  width: 100%;
+  object-fit: contain;
+}
+@media screen and (max-width: 540px) {
+  .bvv-div p {
+    font-size: 14px;
+  }
+  .bvv-logo {
+    max-width: 300px;
+  }
+}
