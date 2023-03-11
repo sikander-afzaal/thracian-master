@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: Alte;
+  src: url("./fonts/AlteHaasGroteskBold.woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Alte;
+  src: url("./fonts/AlteHaasGroteskRegular.woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Petita;
+  src: url("./fonts/PetitaBold.woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Petita;
+  src: url("./fonts/PetitaLight.woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Petita;
+  src: url("./fonts/PetitaMedium.woff");
+  font-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Petita", sans-serif !important;
+}
+:root {
+  --dark-green: #002e14;
+  --light-green: #009a44;
+  --max-width: 1145px;
+}
+.alte {
+  font-family: "Alte", Courier, monospace !important;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+body {
+  background: #0c0a08;
+  display: initial !important;
+  margin: 0 !important;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-block: 50px;
+}
+.bg {
+  background-image: url("./Pages/Landing/styles/bg/mint.webp");
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  isolation: isolate;
+  padding-top: 20px;
+}
+.bg::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -4;
+  opacity: 0.9;
+}
+.MuiPaper-elevation3 {
+  box-shadow: none !important;
+}

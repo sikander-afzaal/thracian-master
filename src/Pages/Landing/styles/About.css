@@ -1,0 +1,137 @@
+.about-wrapp {
+  position: relative;
+  isolation: isolate;
+}
+.about-wrapp::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -4;
+  opacity: 0.8;
+}
+.about-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-width);
+  padding-inline: 20px;
+  padding-top: 60px;
+  gap: 40px;
+}
+.left-about {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 500px;
+  text-align: left;
+}
+.left-about > h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 125%;
+}
+.left-about p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  max-width: 650px;
+}
+.about-div > img {
+  max-height: 800px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  height: 35px;
+  background-image: url("./bg/line.png");
+  background-repeat: repeat-x;
+}
+.line1 {
+  bottom: 100%;
+}
+.line2 {
+  top: 100%;
+  transform: rotate(180deg);
+}
+
+.about-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  z-index: -5;
+}
+
+@media screen and (max-width: 1300px) {
+  .about-div > img {
+    max-height: 600px;
+  }
+}
+@media screen and (max-width: 1161px) {
+  .about-div {
+    flex-direction: column;
+  }
+
+  .left-about {
+    align-items: center;
+    min-width: auto;
+    text-align: center;
+  }
+  .left-about > h2 {
+    font-size: 38px;
+  }
+  .left-about > p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .about-div > img {
+    max-height: 420px;
+  }
+  .circle {
+    right: 50%;
+    transform: translate(50%, -50%);
+    max-width: 80%;
+  }
+  .triangle {
+    display: none;
+  }
+  .mob-triangle {
+    max-width: 100%;
+    object-fit: cover;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: -2;
+    height: 450px;
+    display: block;
+  }
+  .line {
+    height: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .left-about .btn-div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .left-about .btn-div button {
+    width: 100% !important;
+  }
+}
