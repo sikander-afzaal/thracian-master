@@ -813,8 +813,8 @@ const Home = (props: HomeProps) => {
                   <>
                     {isActive && wallet && (
                       <p style={{ marginBottom: "20px" }}>
-                        499 USDC (solana network) <br /> you need some SOL in
-                        your wallet to pay the transaction fee
+                        499 USDC (solana network) <br /> ATTENTION: YOU NEED AT
+                        LEAST 0.015 SOL IN YOUR WALLET FOR THE TRANSACTION FEE
                       </p>
                     )}
                     <MintButton
