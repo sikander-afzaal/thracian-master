@@ -13,6 +13,9 @@
   z-index: -4;
   opacity: 0.8;
 }
+.about-div a {
+  text-decoration: none;
+}
 .about-div {
   display: flex;
   justify-content: center;

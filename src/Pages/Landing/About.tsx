@@ -26,8 +26,12 @@ const About = () => {
             and Roman cultures.
           </p>
           <div className="btn-div">
-            <Button cta text="WHITEPAPER" width={160} height={55} />
-            <Button cta text="PRESENTATION DECK" width={220} height={55} />
+            <a href="/whitepaper.pdf" download target={"blank"}>
+              <Button cta text="WHITEPAPER" width={160} height={55} />
+            </a>
+            <a href="/deck.pdf" download target={"blank"}>
+              <Button cta text="PRESENTATION DECK" width={220} height={55} />
+            </a>
           </div>
         </div>
         <img src="/about.webp" alt="" />
