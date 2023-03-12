@@ -26,10 +26,10 @@ const About = () => {
             and Roman cultures.
           </p>
           <div className="btn-div">
-            <a href="/whitepaper.pdf" download target={"blank"}>
+            <a href="/whitepaper.pdf" target={"blank"}>
               <Button cta text="WHITEPAPER" width={160} height={55} />
             </a>
-            <a href="/deck.pdf" download target={"blank"}>
+            <a href="/deck.pdf" target={"blank"}>
               <Button cta text="PRESENTATION DECK" width={220} height={55} />
             </a>
           </div>
