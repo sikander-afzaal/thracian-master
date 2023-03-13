@@ -20,7 +20,7 @@ const Footer = () => {
             <a href="/#about">About</a>
             <a href="/#collection">Collection</a>
             <a href="/#roadmap">Roadmap</a>
-            <a href="/#team">Team</a>
+            <a href="/#bvv">BVV</a>
             <a href="/#faq">FAQ</a>
           </div>
           <div className="social-footer">
