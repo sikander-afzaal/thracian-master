@@ -50,7 +50,7 @@ export const MintButton = ({
   return (
     <button
       className="cta-btn"
-      style={{ width: "200px", height: "60px", marginInline: "auto" }}
+      style={{ width: "220px", height: "60px", marginInline: "auto" }}
       disabled={
         clicked ||
         candyMachine?.state.isSoldOut ||
@@ -86,7 +86,7 @@ export const MintButton = ({
           ) : isMinting || clicked ? (
             <CircularProgress />
           ) : (
-            "MINT"
+            "MINT CRYPTO"
           )
         ) : isEnded ? (
           "ENDED"
