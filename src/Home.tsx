@@ -827,10 +827,10 @@ const Home = (props: HomeProps) => {
                     />
                     {isActive && wallet && (
                       <button
-                        style={{  width: "220px", height: "60px",marginTop:"20px",marginInline:"auto" }}
+                        style={{  width: "270px", height: "60px",marginTop:"20px",marginInline:"auto" }}
                         className="cta-btn"
                       >
-                        <div>MINT CREDIT CARD</div>
+                        <div>MINT WITH CREDIT CARD</div>
                       </button>
                     )}
                     

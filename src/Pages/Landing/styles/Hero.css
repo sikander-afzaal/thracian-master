@@ -90,7 +90,7 @@
     line-height: 24px;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 610px) {
   .hero-div .btn-div {
     flex-direction: column;
     width: 100%;

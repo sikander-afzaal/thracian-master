@@ -26,14 +26,14 @@ const Hero = () => {
         <p>A collection of 10000 unique pieces</p>
         <div className="btn-div">
           <Link to={"/mint"} style={{ textDecoration: "none" }}>
-            <Button width={160} height={50} text="MINT NFT" cta />
+            <Button width={270} height={50} text="MINT WITH CRYPTO" cta />
           </Link>
           <button
             onClick={() => window.show_creatify_popup()}
-            style={{ width: "160px", height: "50px" }}
+            style={{ width: "270px", height: "50px" }}
             className="cta-btn"
           >
-            <div>Buy With Card</div>
+            <div>MINT WITH CREDIT CARD</div>
           </button>
         </div>
         <div className="social-hero">
