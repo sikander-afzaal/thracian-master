@@ -825,7 +825,7 @@ const Home = (props: HomeProps) => {
                       isSoldOut={isSoldOut}
                       onMint={onMint}
                     />
-                    {!isActive && !wallet && (
+                    {isActive && wallet && (
                       <button
                         style={{  width: "200px", height: "60px",marginTop:"20px",marginInline:"auto" }}
                         className="cta-btn"
