@@ -83,6 +83,7 @@ const Home = (props: HomeProps) => {
   const rpcUrl = props.rpcHost;
   const solFeesEstimation = 0.012; // approx of account creation fees
 
+
   const anchorWallet = useMemo(() => {
     if (
       !wallet ||

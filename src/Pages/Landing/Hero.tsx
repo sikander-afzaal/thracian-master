@@ -10,7 +10,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-
+declare global {
+  interface Window {
+    show_creatify_popup: any; // 👈️ turn off type checking
+  }
+}
 const Hero = () => {
   return (
     <div id="hero" className="container hero-wrap">
@@ -24,6 +28,13 @@ const Hero = () => {
           <Link to={"/mint"} style={{ textDecoration: "none" }}>
             <Button width={160} height={50} text="MINT NFT" cta />
           </Link>
+          <button
+            onClick={() => window.show_creatify_popup()}
+            style={{ width: "160px", height: "50px" }}
+            className="cta-btn"
+          >
+            <div>Buy With Card</div>
+          </button>
         </div>
         <div className="social-hero">
           <a href="https://discord.com/invite/cCrRc6GQjH" target={"blank"}>

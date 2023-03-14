@@ -7,13 +7,22 @@ type btnProps = {
   height: number;
 };
 
-const Button = ({ cta, text, width, height }: btnProps) => {
+const Button = ({ cta, text, width, height, ...rest }: btnProps) => {
   return cta ? (
-    <button style={{ width: width, height: height }} className="cta-btn">
+    <button
+      style={{ width: width, height: height }}
+      className="cta-btn"
+      {...rest}
+    >
       <div>{text}</div>
     </button>
   ) : (
-    <button style={{ width: width, height: height }} className="transparent">
+    <button
+      {...rest}
+      style={{ width: width, height: height }}
+      className="transparent"
+      {...rest}
+    >
       {text}
     </button>
   );
