@@ -83,7 +83,6 @@ const Home = (props: HomeProps) => {
   const rpcUrl = props.rpcHost;
   const solFeesEstimation = 0.012; // approx of account creation fees
 
-
   const anchorWallet = useMemo(() => {
     if (
       !wallet ||
@@ -826,6 +825,15 @@ const Home = (props: HomeProps) => {
                       isSoldOut={isSoldOut}
                       onMint={onMint}
                     />
+                    {!isActive && !wallet && (
+                      <button
+                        style={{  width: "200px", height: "60px",marginTop:"20px",marginInline:"auto" }}
+                        className="cta-btn"
+                      >
+                        <div>Credit Card</div>
+                      </button>
+                    )}
+                    
                   </>
                 )
               ) : (
