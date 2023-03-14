@@ -49,7 +49,7 @@ export const MintButton = ({
 
   return (
     <button
-      className="transparent"
+      className="cta-btn"
       style={{ width: "200px", height: "60px", marginInline: "auto" }}
       disabled={
         clicked ||
